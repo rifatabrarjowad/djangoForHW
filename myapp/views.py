@@ -6,7 +6,7 @@ from .models import Profile
 
 def homepage(request):
 
-    profile = Profile.object.all()
+    profile = Profile.objects.all()
 
     context = {
         'profile': profile
